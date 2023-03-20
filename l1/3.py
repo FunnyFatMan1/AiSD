@@ -1,6 +1,12 @@
-czy=int(input("wpisz liczbe jaka chesz sprawdzic: "))
-tab=[-3,-4,-9,0,1,3,15,90,9,17,-1]
-if czy in tab:
-    print("tak")
-else:
-    print("nie")
+lista = [1, 2, 3, 11, 21, 111, 231]
+
+def sor(liczby): 
+    liczby = sorted(lista) 
+    roz = [str(x) for x in lista] 
+    roz = sorted(roz) 
+    wynik = [int(x) for x in roz] 
+    return wynik 
+
+print(sor(lista)) 
+
+
